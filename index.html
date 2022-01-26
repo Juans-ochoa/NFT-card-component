@@ -10,131 +10,27 @@
             href="./images/favicon-32x32.png"
         />
         <title>Frontend Mentor | NFT preview card component</title>
-        <style>
-            html {
-                box-sizing: border-box;
-            }
-
-            *,
-            *::after,
-            *::before {
-                box-sizing: inherit;
-            }
-
-            body {
-                width: 100vw;
-                height: 100vh;
-                display: flex;
-                align-items: center;
-                margin: 0;
-                padding: 0;
-                font-family: sans-serif;
-                background-color: #151b30;
-            }
-
-            .attribution {
-                font-size: 11px;
-                text-align: center;
-            }
-            .attribution a {
-                color: hsl(228, 45%, 44%);
-            }
-
-            .card {
-                max-width: 350px;
-                margin-left: auto;
-                margin-right: auto;
-                padding: 1.5rem;
-                border-radius: 1rem;
-                background-color: #1c2742;
-                color: #7582aa;
-            }
-
-            .card-image {
-                width: 100%;
-                height: auto;
-                border-radius: 0.5rem;
-            }
-
-            .card-image:hover {
-                cursor: pointer;
-            }
-
-            .card-title {
-                color: #fff;
-            }
-
-            .card-title:hover {
-                color: #00fff8;
-                cursor: pointer;
-            }
-
-            .card-body {
-                display: flex;
-                width: 100%;
-                justify-content: space-between;
-                text-align: justify;
-            }
-            .card-footer {
-                display: flex;
-                align-items: center;
-                margin: 0.5rem;
-            }
-
-            .card-footer > img {
-                width: 3rem;
-                margin-right: 0.5rem;
-                border: thin solid #fff;
-                border-radius: 50%;
-            }
-
-            .card-footer > span {
-                margin-left: 0.5rem;
-                color: #fff;
-            }
-
-            .card-footer > span:hover {
-                cursor: pointer;
-                color: #00fff8;
-            }
-
-            .coin {
-                display: inherit;
-                align-items: center;
-            }
-
-            .coin-value-icon {
-                width: 16px;
-                height: 24px;
-                margin-right: 0.5rem;
-            }
-
-            .coin-value {
-                color: #00fff8;
-            }
-
-            .coin-time {
-                color: #62749c;
-            }
-
-            .coin-time-icon {
-                height: 16px;
-                margin-right: 0.5rem;
-            }
-
-            .avatar {
-                display: flex;
-            }
-        </style>
+        <link rel="stylesheet" href="css/main.css" />
     </head>
     <body>
         <article class="card">
-            <img
-                src="/images/image-equilibrium.jpg"
-                class="card-image"
-                alt="equilibrium"
-            />
-            <h2 class="card-title">Equilibrium #3429</h2>
+            <div class="card-image">
+                <img
+                    src="/images/image-equilibrium.jpg"
+                    class="card-image-one"
+                    alt="equilibrium"
+                />
+                <a href="#">
+                    <img
+                        class="card-image-cover"
+                        src="/images/icon-view.svg"
+                        alt=""
+                    />
+                </a>
+            </div>
+            <h2 class="card-title">
+                <a href="#"> Equilibrium #3429 </a>
+            </h2>
             <p>Our Equilibrium collection promotes balance and calm.</p>
             <div class="card-body">
                 <div class="coin">
@@ -157,16 +53,16 @@
             <hr />
             <div class="card-footer">
                 <img src="/images/image-avatar.png" alt="Avatar" />
-                Creation of <span> Juans Ochoa</span>
+                Creation of <a href="#">Jules Wyvern</a>
             </div>
         </article>
-        <!-- <div class="attribution">
+        <div class="attribution">
             Challenge by
             <a
                 href="https://www.frontendmentor.io?ref=challenge"
                 target="_blank"
                 >Frontend Mentor</a
             >. Coded by <a href="#">Juan Sebastián Ochoa</a>.
-        </div> -->
+        </div>
     </body>
 </html>

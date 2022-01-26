@@ -1,0 +1,153 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #151b30;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #00fff8;
+}
+
+.attribution {
+    margin: 1rem auto;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.card {
+    max-width: 330px;
+    max-height: auto;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: #1c2742;
+    color: #7582aa;
+    box-shadow: 1.5rem 1.5rem #151a2e, 2rem 2rem #151b30;
+}
+
+.card-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.card-image > img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.card-image > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    border-radius: 0.5rem;
+}
+
+.card-image > a:hover {
+    background-color: #00fff860;
+    opacity: 1;
+}
+
+.card-title {
+    color: #fff;
+}
+
+.card-title > a {
+    color: inherit;
+}
+
+.card-title:hover {
+    color: #00fff8;
+    cursor: pointer;
+}
+
+.card-body {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: justify;
+}
+.card-footer {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.card-footer > img {
+    width: 2rem;
+    height: auto;
+    margin-right: 0.5rem;
+    border: thin solid #fff;
+    border-radius: 50%;
+}
+
+.card-footer > a {
+    margin-left: 0.5rem;
+    color: #fff;
+}
+
+.card-footer > a:hover {
+    cursor: pointer;
+    color: #00fff8;
+}
+
+.coin {
+    display: inherit;
+    align-items: center;
+}
+
+.coin-value-icon {
+    width: 14px;
+    height: 24px;
+    margin-right: 0.5rem;
+}
+
+.coin-value {
+    color: #00fff8;
+}
+
+.coin-time {
+    color: #62749c;
+}
+
+.coin-time-icon {
+    height: 16px;
+    margin-right: 0.5rem;
+}
+
+.avatar {
+    display: flex;
+}
